@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4223CD028C2A506000C1D21 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CCF28C2A506000C1D21 /* Endpoint.swift */; };
+		C4223CD128C2A506000C1D21 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CCF28C2A506000C1D21 /* Endpoint.swift */; };
+		C4223CD328C2A54D000C1D21 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CD228C2A54D000C1D21 /* RequestMethod.swift */; };
+		C4223CD428C2A54D000C1D21 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CD228C2A54D000C1D21 /* RequestMethod.swift */; };
+		C4223CD628C2A567000C1D21 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CD528C2A567000C1D21 /* RequestError.swift */; };
+		C4223CD728C2A567000C1D21 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CD528C2A567000C1D21 /* RequestError.swift */; };
+		C4223CD928C2A588000C1D21 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CD828C2A588000C1D21 /* HTTPClientProtocol.swift */; };
+		C4223CDA28C2A588000C1D21 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CD828C2A588000C1D21 /* HTTPClientProtocol.swift */; };
+		C4223CDD28C2A646000C1D21 /* TickersEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CDC28C2A646000C1D21 /* TickersEndpoint.swift */; };
+		C4223CDE28C2A646000C1D21 /* TickersEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CDC28C2A646000C1D21 /* TickersEndpoint.swift */; };
+		C4223CE328C2A92C000C1D21 /* TickersServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CE228C2A92C000C1D21 /* TickersServiceProtocol.swift */; };
+		C4223CE428C2A92C000C1D21 /* TickersServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CE228C2A92C000C1D21 /* TickersServiceProtocol.swift */; };
+		C4223CE828C2AB9D000C1D21 /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CE728C2AB9D000C1D21 /* TickersView.swift */; };
+		C4223CE928C2AB9D000C1D21 /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CE728C2AB9D000C1D21 /* TickersView.swift */; };
+		C4223CED28C2BC8B000C1D21 /* TickersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */; };
+		C4223CEE28C2BC8B000C1D21 /* TickersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */; };
 		C423626E28C249AC00890576 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423626D28C249AC00890576 /* Tests_iOS.swift */; };
 		C423627028C249AC00890576 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423626F28C249AC00890576 /* Tests_iOSLaunchTests.swift */; };
 		C423627A28C249AC00890576 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423627928C249AC00890576 /* Tests_macOS.swift */; };
@@ -37,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4223CCF28C2A506000C1D21 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C4223CD228C2A54D000C1D21 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		C4223CD528C2A567000C1D21 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		C4223CD828C2A588000C1D21 /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		C4223CDC28C2A646000C1D21 /* TickersEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersEndpoint.swift; sourceTree = "<group>"; };
+		C4223CE228C2A92C000C1D21 /* TickersServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickersServiceProtocol.swift; sourceTree = "<group>"; };
+		C4223CE728C2AB9D000C1D21 /* TickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersView.swift; sourceTree = "<group>"; };
+		C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersResponse.swift; sourceTree = "<group>"; };
 		C423625528C249A300890576 /* MP_APPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP_APPApp.swift; sourceTree = "<group>"; };
 		C423625628C249A300890576 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C423625728C249AC00890576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +107,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4223CCD28C2A4B4000C1D21 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CDB28C2A61C000C1D21 /* Endpoints */,
+				C4223CCE28C2A4C5000C1D21 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C4223CCE28C2A4C5000C1D21 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CD228C2A54D000C1D21 /* RequestMethod.swift */,
+				C4223CD528C2A567000C1D21 /* RequestError.swift */,
+				C4223CD828C2A588000C1D21 /* HTTPClientProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C4223CDB28C2A61C000C1D21 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CCF28C2A506000C1D21 /* Endpoint.swift */,
+				C4223CDC28C2A646000C1D21 /* TickersEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		C4223CDF28C2A8A2000C1D21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CE228C2A92C000C1D21 /* TickersServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4223CE528C2AB63000C1D21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CE628C2AB6E000C1D21 /* Tickers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4223CE628C2AB6E000C1D21 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CE728C2AB9D000C1D21 /* TickersView.swift */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
+		C4223CEB28C2BC69000C1D21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C423624F28C249A300890576 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +181,10 @@
 		C423625428C249A300890576 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C4223CEB28C2BC69000C1D21 /* Models */,
+				C4223CE528C2AB63000C1D21 /* Views */,
+				C4223CDF28C2A8A2000C1D21 /* Services */,
+				C4223CCD28C2A4B4000C1D21 /* Network */,
 				C423625528C249A300890576 /* MP_APPApp.swift */,
 				C423625628C249A300890576 /* ContentView.swift */,
 				C423625728C249AC00890576 /* Assets.xcassets */,
@@ -299,8 +387,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223CED28C2BC8B000C1D21 /* TickersResponse.swift in Sources */,
+				C4223CD328C2A54D000C1D21 /* RequestMethod.swift in Sources */,
+				C4223CD628C2A567000C1D21 /* RequestError.swift in Sources */,
+				C4223CD928C2A588000C1D21 /* HTTPClientProtocol.swift in Sources */,
 				C423627F28C249AC00890576 /* ContentView.swift in Sources */,
+				C4223CD028C2A506000C1D21 /* Endpoint.swift in Sources */,
+				C4223CE828C2AB9D000C1D21 /* TickersView.swift in Sources */,
+				C4223CDD28C2A646000C1D21 /* TickersEndpoint.swift in Sources */,
 				C423627D28C249AC00890576 /* MP_APPApp.swift in Sources */,
+				C4223CE328C2A92C000C1D21 /* TickersServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +404,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223CEE28C2BC8B000C1D21 /* TickersResponse.swift in Sources */,
+				C4223CD428C2A54D000C1D21 /* RequestMethod.swift in Sources */,
+				C4223CD728C2A567000C1D21 /* RequestError.swift in Sources */,
+				C4223CDA28C2A588000C1D21 /* HTTPClientProtocol.swift in Sources */,
 				C423628028C249AC00890576 /* ContentView.swift in Sources */,
+				C4223CD128C2A506000C1D21 /* Endpoint.swift in Sources */,
+				C4223CE928C2AB9D000C1D21 /* TickersView.swift in Sources */,
+				C4223CDE28C2A646000C1D21 /* TickersEndpoint.swift in Sources */,
 				C423627E28C249AC00890576 /* MP_APPApp.swift in Sources */,
+				C4223CE428C2A92C000C1D21 /* TickersServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

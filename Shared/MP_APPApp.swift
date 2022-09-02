@@ -11,7 +11,7 @@ import SwiftUI
 struct MP_APPApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TickersView(viewModel: .init(service: .init(client: HTTPClient())))
         }
     }
 }
