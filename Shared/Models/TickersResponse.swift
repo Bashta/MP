@@ -10,7 +10,7 @@ import Foundation
 struct TickersResponse: Codable {
     let count: Int
     let nextURL: String
-    let requestID: String
+    let requestID: String?
     let results: [Ticker]
     let status: String
 
@@ -23,19 +23,21 @@ struct TickersResponse: Codable {
     }
 }
 
-struct Ticker: Codable {
-    let active: Bool
-    let cik: String
-    let compositeFigi: String
-    let currencyName: String
-    let lastUpdatedUTC: Date
-    let locale: String
-    let market: String
-    let name: String
-    let primaryExchange: String
-    let shareClassFigi: String
-    let ticker: String
-    let type: String
+struct Ticker: Codable, Identifiable {
+    var id: UUID = UUID()
+
+    let active: Bool?
+    let cik: String?
+    let compositeFigi: String?
+    let currencyName: String?
+    let lastUpdatedUTC: String?
+    let locale: String?
+    let market: String?
+    let name: String?
+    let primaryExchange: String?
+    let shareClassFigi: String?
+    let ticker: String?
+    let type: String?
 
     enum CodingKeys: String, CodingKey {
         case active = "active"

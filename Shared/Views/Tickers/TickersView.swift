@@ -7,36 +7,23 @@
 
 import SwiftUI
 
-class TickerViewViewModel: ObservableObject {
-    
-    @Published var result: [Ticker] = []
-    @Published var isLoading: Bool = false
-    
-    private let service: TickersServiceProtocol
-    
-    init(service: TickersService) {
-        self.service = service
-    }
-}
-
 struct TickersView: View {
 
-    private let viewModel: TickerViewViewModel
-
-    init(viewModel: TickerViewViewModel) {
-        self.viewModel = viewModel
-    }
+    @StateObject var viewModel: TickerViewViewModel
 
     var body: some View {
         HStack {
-            Text("Appl")
-            Text("665$")
+            List(viewModel.result) {
+                Text($0.ticker ?? "Missing ticker name")
+            }
         }
+        .navigationTitle("Tickers")
+        .task { await viewModel.fetchTickers() }
     }
 }
 
 struct TickersView_Previews: PreviewProvider {
     static var previews: some View {
-        TickersView(viewModel: .init(service: .init(client: HTTPClient())))
+        TickersView(viewModel: TickerViewViewModel(service: TickersService(client: HTTPClient())) )
     }
 }

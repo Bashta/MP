@@ -23,6 +23,8 @@
 		C4223CE928C2AB9D000C1D21 /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CE728C2AB9D000C1D21 /* TickersView.swift */; };
 		C4223CED28C2BC8B000C1D21 /* TickersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */; };
 		C4223CEE28C2BC8B000C1D21 /* TickersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */; };
+		C4223CF228C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */; };
+		C4223CF328C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */; };
 		C423626E28C249AC00890576 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423626D28C249AC00890576 /* Tests_iOS.swift */; };
 		C423627028C249AC00890576 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423626F28C249AC00890576 /* Tests_iOSLaunchTests.swift */; };
 		C423627A28C249AC00890576 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423627928C249AC00890576 /* Tests_macOS.swift */; };
@@ -61,6 +63,7 @@
 		C4223CE228C2A92C000C1D21 /* TickersServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickersServiceProtocol.swift; sourceTree = "<group>"; };
 		C4223CE728C2AB9D000C1D21 /* TickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersView.swift; sourceTree = "<group>"; };
 		C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersResponse.swift; sourceTree = "<group>"; };
+		C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewViewModel.swift; sourceTree = "<group>"; };
 		C423625528C249A300890576 /* MP_APPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP_APPApp.swift; sourceTree = "<group>"; };
 		C423625628C249A300890576 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C423625728C249AC00890576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +170,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C4223CEF28C2BF68000C1D21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CF028C2BF7B000C1D21 /* Tickers */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C4223CF028C2BF7B000C1D21 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
 		C423624F28C249A300890576 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +200,7 @@
 		C423625428C249A300890576 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C4223CEF28C2BF68000C1D21 /* ViewModels */,
 				C4223CEB28C2BC69000C1D21 /* Models */,
 				C4223CE528C2AB63000C1D21 /* Views */,
 				C4223CDF28C2A8A2000C1D21 /* Services */,
@@ -387,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223CF228C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */,
 				C4223CED28C2BC8B000C1D21 /* TickersResponse.swift in Sources */,
 				C4223CD328C2A54D000C1D21 /* RequestMethod.swift in Sources */,
 				C4223CD628C2A567000C1D21 /* RequestError.swift in Sources */,
@@ -404,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223CF328C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */,
 				C4223CEE28C2BC8B000C1D21 /* TickersResponse.swift in Sources */,
 				C4223CD428C2A54D000C1D21 /* RequestMethod.swift in Sources */,
 				C4223CD728C2A567000C1D21 /* RequestError.swift in Sources */,

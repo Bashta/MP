@@ -14,7 +14,7 @@ extension TickersEndpoint: Endpoint {
     var path: String {
         switch self {
         case .tickers, .ticker:
-            return "v3/reference/tickers"
+            return "/v3/reference/tickers"
         }
     }
 
@@ -27,7 +27,7 @@ extension TickersEndpoint: Endpoint {
 
     var header: [String: String]? {
         // Access Token to use in Bearer header
-        let accessToken = "Hardcode token for now, ENV it later"
+        let accessToken = "pOjdIpLD6ofBaA4Hm75AmpkQqzCUsl4V"
         switch self {
         case .tickers, .ticker:
             return [

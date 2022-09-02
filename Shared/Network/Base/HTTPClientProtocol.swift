@@ -30,7 +30,7 @@ struct HTTPClient: HTTPClientProtocol {
         if let body = endpoint.body {
             request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
         }
-        
+
         guard let (data, response) = try? await URLSession.shared.data(for: request, delegate: nil) else {
             return .failure(.unknown)
         }
@@ -38,17 +38,18 @@ struct HTTPClient: HTTPClientProtocol {
         guard let response = response as? HTTPURLResponse else {
             return .failure(.noResponse)
         }
-        
+
         switch response.statusCode {
         case 200...299:
-            guard let decodedResponse = try? JSONDecoder().decode(responseModel, from: data) else {
+            do {
+                return .success(try JSONDecoder().decode(responseModel, from: data))
+            } catch {
                 return .failure(.decode)
             }
-            return .success(decodedResponse)
-            
+
         case 401:
             return .failure(.unauthorized)
-            
+
         default:
             return .failure(.unexpectedStatusCode)
         }
