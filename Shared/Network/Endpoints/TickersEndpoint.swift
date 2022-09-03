@@ -26,8 +26,8 @@ extension TickersEndpoint: Endpoint {
     }
 
     var header: [String: String]? {
-        // Access Token to use in Bearer header
-        let accessToken = "pOjdIpLD6ofBaA4Hm75AmpkQqzCUsl4V"
+        
+        let accessToken = EnviromentConfig().polygonApiKey
         switch self {
         case .tickers, .ticker:
             return [

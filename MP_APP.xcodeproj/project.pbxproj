@@ -25,6 +25,10 @@
 		C4223CEE28C2BC8B000C1D21 /* TickersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */; };
 		C4223CF228C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */; };
 		C4223CF328C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */; };
+		C4223D0028C2E2E6000C1D21 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CFF28C2E2E6000C1D21 /* Enviroment.swift */; };
+		C4223D0128C2E2E6000C1D21 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223CFF28C2E2E6000C1D21 /* Enviroment.swift */; };
+		C4223D0228C3863B000C1D21 /* debug_keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4223CFB28C2E111000C1D21 /* debug_keys.plist */; };
+		C4223D0328C3876A000C1D21 /* debug_keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4223CFB28C2E111000C1D21 /* debug_keys.plist */; };
 		C423626E28C249AC00890576 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423626D28C249AC00890576 /* Tests_iOS.swift */; };
 		C423627028C249AC00890576 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423626F28C249AC00890576 /* Tests_iOSLaunchTests.swift */; };
 		C423627A28C249AC00890576 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423627928C249AC00890576 /* Tests_macOS.swift */; };
@@ -64,6 +68,8 @@
 		C4223CE728C2AB9D000C1D21 /* TickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersView.swift; sourceTree = "<group>"; };
 		C4223CEC28C2BC8B000C1D21 /* TickersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersResponse.swift; sourceTree = "<group>"; };
 		C4223CF128C2BF8D000C1D21 /* TickerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewViewModel.swift; sourceTree = "<group>"; };
+		C4223CFB28C2E111000C1D21 /* debug_keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = debug_keys.plist; sourceTree = "<group>"; };
+		C4223CFF28C2E2E6000C1D21 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		C423625528C249A300890576 /* MP_APPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP_APPApp.swift; sourceTree = "<group>"; };
 		C423625628C249A300890576 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C423625728C249AC00890576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +192,23 @@
 			path = Tickers;
 			sourceTree = "<group>";
 		};
+		C4223CFA28C2E0A2000C1D21 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CFE28C2E2D2000C1D21 /* ENV */,
+				C4223CFB28C2E111000C1D21 /* debug_keys.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C4223CFE28C2E2D2000C1D21 /* ENV */ = {
+			isa = PBXGroup;
+			children = (
+				C4223CFF28C2E2E6000C1D21 /* Enviroment.swift */,
+			);
+			path = ENV;
+			sourceTree = "<group>";
+		};
 		C423624F28C249A300890576 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +223,7 @@
 		C423625428C249A300890576 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C4223CFA28C2E0A2000C1D21 /* Config */,
 				C4223CEF28C2BF68000C1D21 /* ViewModels */,
 				C4223CEB28C2BC69000C1D21 /* Models */,
 				C4223CE528C2AB63000C1D21 /* Views */,
@@ -374,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223D0228C3863B000C1D21 /* debug_keys.plist in Resources */,
 				C423628128C249AC00890576 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223D0328C3876A000C1D21 /* debug_keys.plist in Resources */,
 				C423628228C249AC00890576 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +435,7 @@
 			files = (
 				C4223CF228C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */,
 				C4223CED28C2BC8B000C1D21 /* TickersResponse.swift in Sources */,
+				C4223D0028C2E2E6000C1D21 /* Enviroment.swift in Sources */,
 				C4223CD328C2A54D000C1D21 /* RequestMethod.swift in Sources */,
 				C4223CD628C2A567000C1D21 /* RequestError.swift in Sources */,
 				C4223CD928C2A588000C1D21 /* HTTPClientProtocol.swift in Sources */,
@@ -427,6 +454,7 @@
 			files = (
 				C4223CF328C2BF8D000C1D21 /* TickerViewViewModel.swift in Sources */,
 				C4223CEE28C2BC8B000C1D21 /* TickersResponse.swift in Sources */,
+				C4223D0128C2E2E6000C1D21 /* Enviroment.swift in Sources */,
 				C4223CD428C2A54D000C1D21 /* RequestMethod.swift in Sources */,
 				C4223CD728C2A567000C1D21 /* RequestError.swift in Sources */,
 				C4223CDA28C2A588000C1D21 /* HTTPClientProtocol.swift in Sources */,
